@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 
 f = open('/boot/cmdline.txt', 'r')
 parameters = f.read().split(" ")
