@@ -3,8 +3,7 @@
 CHECKSUM=2f58e62dcd36cf18490c80435fb29992
 LOG_FILE=/tmp/em358-program.log
 
-function super_reset()
-{
+function super_reset(){
   # gpio19 - EM358 nBOOTMODE (active low)
   # gpio18 - mcu power
   # gpio20 - EM_NRST - EM3588 RESET (active low)
@@ -64,10 +63,11 @@ function enable_program() {
 
 }
 
+echo "Checking for gpio export"
 for i in 4 17 18 19 20 22 23 27
 do
-  if [ ! -d /sys/class/gpio/gpio$i ]
-  then
+  if [ ! -d /sys/class/gpio/gpio$i ];then
+    echo "Exporting gpio $i"
     echo $i > /sys/class/gpio/export
   fi
 done

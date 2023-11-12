@@ -24,6 +24,7 @@ function reset_creator(){
 function try_program_creator() {
   if [ -n "$P4DETECT" ]; 
   then 
+    echo "pi 4 detected"
 	  CABLE=sysfsgpio_creator
   else
 	  CABLE=matrix_creator
