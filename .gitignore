@@ -1,1 +1,5 @@
 build/
+debian/.debhelper
+debian/matrixio-creator-init
+
+obj-arm-linux-gnueabihf/

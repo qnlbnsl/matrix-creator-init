@@ -5,8 +5,10 @@ fpga-program.bash usr/share/matrixlabs/matrixio-devices
 em358-program.bash usr/share/matrixlabs/matrixio-devices
 matrix-init.bash usr/share/matrixlabs/matrixio-devices
 radio-init.bash usr/share/matrixlabs/matrixio-devices
-obj-aarch64-linux-gnu/cpp/firmware_info usr/share/matrixlabs/matrixio-devices
-obj-aarch64-linux-gnu/cpp/fpga_info usr/share/matrixlabs/matrixio-devices
+# obj-aarch64-linux-gnu/cpp/firmware_info usr/share/matrixlabs/matrixio-devices
+# obj-aarch64-linux-gnu/cpp/fpga_info usr/share/matrixlabs/matrixio-devices
+obj-arm-linux-gnueabihf/cpp/firmware_info usr/share/matrixlabs/matrixio-devices
+obj-arm-linux-gnueabihf/cpp/fpga_info usr/share/matrixlabs/matrixio-devices
 mcu_firmware.version usr/share/matrixlabs/matrixio-devices
 boot_modifications.txt usr/share/matrixlabs/matrixio-devices/config
 matrixlabs_edit_settings.py usr/share/matrixlabs/matrixio-devices
