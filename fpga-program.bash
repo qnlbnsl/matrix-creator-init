@@ -2,7 +2,7 @@
 
 cd /usr/share/matrixlabs/matrixio-devices
 
-P4DETECT=$(grep "Pi 4" /sys/firmware/devicetree/base/model)
+P4DETECT=$(grep -a "Pi 4" /sys/firmware/devicetree/base/model)
 
 function reset_voice(){
   echo 26 > /sys/class/gpio/export 2>/dev/null
