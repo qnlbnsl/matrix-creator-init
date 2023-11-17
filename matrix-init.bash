@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# cd /usr/share/matrixlabs/matrixio-devices
+cd /usr/share/matrixlabs/matrixio-devices
 
 function detect_device(){
   MATRIX_DEVICE=$(./fpga_info | grep IDENTIFY | cut -f 4 -d ' ')
@@ -13,7 +13,7 @@ function read_voice_config(){
 echo "Programmning FPGA"
 ./fpga-program.bash
 echo "done"
-sleep(5)
+sleep 5
 detect_device
 
 case "${MATRIX_DEVICE}" in
